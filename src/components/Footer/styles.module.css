@@ -1,0 +1,121 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #03aec6;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Стили для Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #333;
+  height: 60px;
+}
+
+.navbarLinks {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarLink {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.navbarLink:hover {
+  color: #007bff;
+}
+
+hr {
+  width: 100%;
+  max-width: 863px;
+  border: 0.3px solid white;
+}
+
+.subscribe {
+  max-width: 566px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.inputLabel {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.inputField {
+  flex-grow: 1;
+  height: 64px;
+  padding: 0 20px;
+  border: 1px solid #004e44;
+  background-color: #ffffff;
+  border-radius: 38px;
+  box-shadow:
+    -4px -4px 4px #b3e028,
+    4px 4px 4px #b3e028;
+  font-size: 18px;
+  color: #004e44;
+  font-weight: 400;
+  outline: none;
+}
+
+.inputField:focus {
+  outline: none;
+  border: none;
+}
+
+.submitButton {
+  position: absolute;
+  right: 6px;
+  max-width: 133px;
+  width: 100%;
+  height: calc(
+    100% - 12px
+  ); /* Уменьшаем высоту кнопки на 12px (6px сверху и снизу) */
+  background-color: #03aec6;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border: 1px solid #004e44;
+  border-radius: 38px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #0295a1; /* Slightly darker shade for hover effect */
+}
+
+.submitButton:active {
+  box-shadow: none; /* Remove shadow when button is clicked */
+}

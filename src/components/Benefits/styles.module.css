@@ -1,0 +1,58 @@
+.Benefits {
+  width: 100%;
+  height: auto;
+  padding-bottom: 168px;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.title {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+
+.benefit {
+  display: flex;
+  max-width: 473px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 24px;
+}
+
+.benefit .name {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.benefit .description {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #004e44;
+  text-align: center;
+}
+
+.benefit .bannerImg {
+  width: 296px;
+  height: 308px;
+}

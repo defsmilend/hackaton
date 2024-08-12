@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Montserrant';
+  src: url('./Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MontserrantBold';
+  src: url('./Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'MontserrantMedium';
+  src: url('./Montserrat//static/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'WubbaLubbaDubDub';
+  src: url('./WubbaLubbaDubDub/WubbaLubbaDubDub.ttf') format('truetype');
+  font-weight: 400;
+}

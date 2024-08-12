@@ -1,0 +1,52 @@
+.HowItWorks {
+  width: 100%;
+  height: 1023px;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 70px;
+  padding-top: 168px;
+}
+
+.stepsBlock {
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.stepsBlock .banner {
+  width: 471px;
+  height: 574px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+}
+
+.stepItem img {
+  width: 61.86px;
+  height: 68.92px;
+  margin-right: 24px;
+}
+
+.stepItem span {
+  font-size: 32px;
+  -webkit-text-stroke: 1px #000044;
+  color: #03aec6;
+}

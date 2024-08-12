@@ -1,0 +1,39 @@
+.wrapper {
+  margin-top: 168px;
+}
+
+.wrapper h1 {
+  text-transform: uppercase;
+}
+
+.sponsorsBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.sponsor {
+  max-width: 231px;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsor img {
+  width: 160px;
+  height: 160px;
+}
+
+.sponsor .name {
+  margin-top: 16px;
+  font-size: 32px;
+}
+
+.sponsor .description {
+  margin-top: 8px;
+  text-align: center;
+  color: #004e44;
+  font-size: 16px;
+  line-height: 25px;
+}

@@ -1,0 +1,52 @@
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header img {
+  width: 212px;
+  height: 44px;
+}
+
+/* Стили для Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #333;
+  height: 60px;
+}
+
+.navbarLinks {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarItem {
+  margin-left: 20px;
+}
+
+.navbarLink {
+  color: #03aec6;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.navbarLink:hover {
+  color: #007bff;
+}
+
+/* mobile version */
+
+@media (max-width: 767px) {
+  .Header img {
+    width: 113px;
+    height: 24px;
+  }
+}

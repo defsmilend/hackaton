@@ -1,0 +1,66 @@
+.Faq {
+  width: 100%;
+  height: auto;
+  padding: 120px 176px;
+  background-image: url('./assets/FaqBackgroundImage.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .title {
+  text-transform: uppercase;
+  color: #03aec6;
+  font-size: 70px;
+}
+
+.accordionContainer {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.accordion {
+  max-width: 484px;
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordionContent {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion img {
+  width: 22px;
+  height: 22px;
+  margin-right: 24px;
+}
+
+.accordionTitle {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  color: #03aec6;
+  -webkit-text-stroke: 1px #000044;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.accordionContent {
+  padding: 10px;
+}

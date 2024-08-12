@@ -1,0 +1,37 @@
+.timer {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-top: 128px;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle svg {
+  display: block;
+}
+
+.circle .label {
+  margin-top: 8px;
+  font-size: 24px;
+  color: #03aec6;
+  -webkit-text-stroke: 1px #004e44;
+}
+
+.timerText {
+  font-family: 'WubbaLubbaDubDub', sans-serif;
+  color: #b3e028;
+  -webkit-text-stroke: 0.5px #004e44;
+}
+
+.timerCircle {
+  color: #b3e028;
+  -webkit-text-stroke: 1px #004e44;
+  box-shadow:
+    -4px -4px 4px #b3e028,
+    4px 4px 4px #b3e028;
+}
