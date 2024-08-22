@@ -7,7 +7,7 @@ function MainBanner() {
   const targetDate = new Date('2024-12-31T23:59:59');
 
   return (
-    <div className={styles.MainBanner}>
+    <div id="home" className={styles.MainBanner}>
       <Header />
       <div className={styles.content}>
         <div className={styles.mainContent}>
@@ -18,7 +18,14 @@ function MainBanner() {
             <br />
             STEM Hackathons
           </span>
-          <button style={{ background: 'none', border: 'none', padding: 0 }}>
+          <button
+            style={{
+              background: 'none',
+              border: 'none',
+              padding: 0,
+              cursor: 'pointer',
+            }}
+          >
             <img
               src="src/components/MainBanner/components/Header/assets/ApplyButton.png"
               alt="button"

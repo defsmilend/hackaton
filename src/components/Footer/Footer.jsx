@@ -32,6 +32,14 @@ const navbarItemInfo = [
   },
 ];
 
+const handleScroll = (e, href) => {
+  e.preventDefault();
+  const targetElement = document.querySelector(href);
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export default function Footer() {
   return (
     <div className={styles.wrapper}>
@@ -39,14 +47,18 @@ export default function Footer() {
         <ul className={styles.navbarLinks}>
           {navbarItemInfo.map((item) => (
             <li className={styles.navbarItem} key={item.text}>
-              <a href={item.href} className={styles.navbarLink}>
+              <a
+                href={item.href}
+                className={styles.navbarLink}
+                onClick={(e) => handleScroll(e, item.href)}
+              >
                 {item.text}
               </a>
             </li>
           ))}
         </ul>
-        <hr />
-        <div className={styles.subscribe}>
+        <hr className="hide-on-mobile" />
+        {/* <div className={styles.subscribe}>
           <form>
             <label className={styles.inputLabel}>
               Subscribe to our newsletter
@@ -62,7 +74,7 @@ export default function Footer() {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );

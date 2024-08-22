@@ -23,7 +23,7 @@ const workSteps = [
 
 function HowItWorks() {
   return (
-    <div className={styles.HowItWorks}>
+    <div id="howItWorks" className={styles.HowItWorks}>
       <Layout>
         <div className={styles.content}>
           <h1 className={classNames(styles.title, 'wubba-text-style')}>
@@ -31,7 +31,7 @@ function HowItWorks() {
           </h1>
           <div className={styles.stepsBlock}>
             <img
-              className={styles.banner}
+              className={classNames(styles.banner, 'hide-on-mobile')}
               src="src/components/HowItWorks/assets/Banner.png"
               alt="banner"
             />

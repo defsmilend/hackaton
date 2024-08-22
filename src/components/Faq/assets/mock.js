@@ -1,10 +1,4 @@
-import React, { useState } from 'react';
-import Layout from '../Layout/Layout';
-import classNames from 'classnames';
-import Plus from './assets/AccordionPlus.svg';
-import styles from './styles.module.css';
-
-const accordionData = [
+export const accordionData = [
   {
     title: 'What is Hack.Nerd, and who can participate?',
     content:
@@ -47,60 +41,3 @@ const accordionData = [
       'We offer a range of exciting prizes, including tech gadgets, gift cards, and internships with our sponsors. All participants also receive a certificate of achievement.',
   },
 ];
-
-const Accordion = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <div className={styles.accordion} onClick={toggleAccordion}>
-      <div className={styles.accordionContent}>
-        <div className={styles.accordionHeader}>
-          <img src={Plus} alt="plusButton" />
-          <span className={styles.accordionTitle}>{title}</span>
-        </div>
-        {isOpen && <div className={styles.accordionContent}>{content}</div>}
-      </div>
-    </div>
-  );
-};
-
-function Faq() {
-  return (
-    <div id="faq" className={styles.Faq}>
-      <div className={styles.content}>
-        <h1 className={classNames(styles.title, 'wubba-text-style')}>Faq</h1>
-        <div className={styles.accordionWrapper}>
-          <div className={styles.accordionContainerLeft}>
-            {accordionData.slice(0, 4).map((item, index) => (
-              <Accordion
-                key={index}
-                title={item.title}
-                content={item.content}
-              />
-            ))}
-          </div>
-          <div className={styles.accordionContainerRight}>
-            {accordionData.slice(0, 4).map((item, index) => (
-              <Accordion
-                key={index}
-                title={item.title}
-                content={item.content}
-              />
-            ))}
-          </div>
-        </div>
-        {/* <div className={styles.accordionContainer}>
-          {accordionData.map((item, index) => (
-            <Accordion key={index} title={item.title} content={item.content} />
-          ))}
-        </div> */}
-      </div>
-    </div>
-  );
-}
-
-export default Faq;

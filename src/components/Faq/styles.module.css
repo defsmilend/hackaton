@@ -19,6 +19,10 @@
   font-size: 70px;
 }
 
+.accordionHeader {
+  display: flex;
+}
+
 .accordionContainer {
   margin-top: 100px;
   width: 100%;
@@ -48,6 +52,8 @@
   width: 22px;
   height: 22px;
   margin-right: 24px;
+  margin-top: 7px;
+  cursor: pointer;
 }
 
 .accordionTitle {
@@ -63,4 +69,50 @@
 
 .accordionContent {
   padding: 10px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #004e44;
+}
+
+.accordionWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 125px;
+}
+
+@media screen and (max-width: 1160px) {
+  .accordionWrapper {
+    margin-top: 32px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Faq {
+    padding: 41px 15px;
+  }
+
+  .accordionContainer {
+    margin-top: 32px;
+  }
+
+  .accordionWrapper {
+    margin-top: 32px;
+  }
+
+  .content .title {
+    font-size: 24px;
+  }
+
+  .accordion img {
+    width: 18px;
+    height: 18px;
+    margin-right: 14px;
+  }
+
+  .accordionTitle {
+    font-size: 18px;
+  }
 }

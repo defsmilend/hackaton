@@ -60,7 +60,7 @@ const benefitsSteps = [
 
 function Benefits() {
   return (
-    <div className={styles.Benefits}>
+    <div id="benefits" className={styles.Benefits}>
       <Layout>
         <div className={styles.content}>
           <h1 className={classNames(styles.title, 'wubba-text-style')}>
@@ -85,7 +85,7 @@ function Benefits() {
                   )}
                   {el?.banner && (
                     <img
-                      className={styles.bannerImg}
+                      className={classNames(styles.bannerImg, 'hide-on-mobile')}
                       src={el?.banner}
                       alt="bannerImg"
                     />

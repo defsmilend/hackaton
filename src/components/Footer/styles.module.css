@@ -119,3 +119,25 @@ form {
 .submitButton:active {
   box-shadow: none; /* Remove shadow when button is clicked */
 }
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .navbarLinks {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .navbarLink {
+    text-decoration: underline;
+    font-size: 18px;
+  }
+  .inputWrapper {
+    padding: 0 15px;
+  }
+  .submitButton {
+    right: 26px;
+  }
+}

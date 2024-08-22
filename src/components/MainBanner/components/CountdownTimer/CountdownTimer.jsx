@@ -43,27 +43,7 @@ const CountdownTimer = ({ targetDate }) => {
 const Circle = ({ label, value }) => {
   return (
     <div className={styles.circle}>
-      {/* <svg width="84" height="80">
-        <circle
-          className={styles.timerCircle}
-          cx="42"
-          cy="40"
-          r="38"
-          fill="#03AEC6"
-          stroke="#004E44"
-        />
-        <text
-          className={styles.timerText}
-          x="42"
-          y="50"
-          textAnchor="middle"
-          fontSize="32"
-          fill="#B3E028"
-        >
-          {value}
-        </text>
-      </svg> */}
-      <svg width="84" height="80">
+      <svg>
         <defs>
           <filter id="drop-shadow">
             <feOffset dx="-4" dy="-4" result="shadow1" />
@@ -90,7 +70,14 @@ const Circle = ({ label, value }) => {
           strokeWidth="2"
           filter="url(#drop-shadow)"
         />
-        <text x="42" y="45" textAnchor="middle" fontSize="20" fill="#fff">
+        <text
+          x="50%"
+          y="50%"
+          dx="0"
+          textAnchor="middle"
+          fontSize="20"
+          fill="#fff"
+        >
           {value}
         </text>
       </svg>

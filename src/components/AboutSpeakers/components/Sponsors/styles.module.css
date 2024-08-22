@@ -1,5 +1,6 @@
 .wrapper {
   margin-top: 168px;
+  padding-bottom: 140px;
 }
 
 .wrapper h1 {
@@ -36,4 +37,44 @@
   color: #004e44;
   font-size: 16px;
   line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    margin-top: 48px;
+    padding-bottom: 48px;
+  }
+  .sponsorsBlock {
+    margin-top: 32px;
+  }
+
+  .sponsor .logo {
+    text-align: center;
+    width: 90px;
+    height: 90px;
+  }
+
+  .sponsor .name {
+    font-size: 18px;
+  }
+
+  .sponsor .description {
+    font-size: 16px;
+  }
+
+  .sponsor {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 8px;
+  }
+
+  .slick-slide {
+    margin: 0 8px;
+  }
+
+  .slick-list {
+    margin: 0 -8px;
+  }
 }

@@ -11,10 +11,6 @@
   align-items: center;
 }
 
-.circle svg {
-  display: block;
-}
-
 .circle .label {
   margin-top: 8px;
   font-size: 24px;
@@ -34,4 +30,46 @@
   box-shadow:
     -4px -4px 4px #b3e028,
     4px 4px 4px #b3e028;
+}
+
+.circle svg {
+  width: 84px;
+  height: 84px;
+  display: block;
+}
+
+.circle svg text {
+  text-anchor: middle;
+  alignment-baseline: central; /* Исправление: использование alignment-baseline */
+  font-size: 20px;
+  fill: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .timer {
+    margin-top: 64px;
+  }
+
+  .circle .label {
+    font-size: 18px;
+  }
+
+  .circle svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .circle svg circle {
+    cx: 30;
+    cy: 30;
+    r: 28;
+  }
+
+  .circle svg text {
+    x: 30;
+    y: 30;
+    dominant-baseline: middle;
+    text-anchor: middle;
+    font-size: 16px;
+  }
 }

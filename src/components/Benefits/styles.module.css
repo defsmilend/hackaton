@@ -56,3 +56,27 @@
   width: 296px;
   height: 308px;
 }
+
+@media screen and (max-width: 767px) {
+  .Benefits {
+    padding-bottom: 0;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+
+  .steps {
+    gap: 32px;
+  }
+
+  .benefit img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .benefit .name {
+    font-size: 18px;
+  }
+}

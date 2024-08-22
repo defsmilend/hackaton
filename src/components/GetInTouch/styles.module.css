@@ -59,3 +59,23 @@
   justify-content: center;
   gap: 30px;
 }
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 48px 16.5px;
+  }
+  .content {
+    gap: 32px;
+  }
+  .content .title {
+    font-size: 24px;
+  }
+  .buttonSection {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .submitButton {
+    height: 48px;
+    max-width: none;
+  }
+}

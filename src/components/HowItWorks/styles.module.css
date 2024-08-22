@@ -1,6 +1,6 @@
 .HowItWorks {
   width: 100%;
-  height: 1023px;
+  height: auto;
   background-color: white;
 }
 
@@ -49,4 +49,37 @@
   font-size: 32px;
   -webkit-text-stroke: 1px #000044;
   color: #03aec6;
+}
+
+@media screen and (max-width: 1160px) {
+  .stepsBlock .banner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 24px;
+    padding-top: 40px;
+  }
+
+  .stepsBlock {
+    margin-top: 54px;
+  }
+
+  .stepItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stepItem img {
+    width: 48px;
+    height: 48px;
+    margin-right: 0;
+  }
+
+  .stepItem span {
+    margin-top: 16px;
+    font-size: 18px;
+  }
 }

@@ -88,3 +88,35 @@
 .submitButton:active {
   box-shadow: none; /* Remove shadow when button is clicked */
 }
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 64px 0;
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+
+  .content .title {
+    font-size: 24px;
+  }
+
+  .inputRow {
+    gap: 24px;
+    margin-top: 32px;
+  }
+
+  .inputLabel {
+    font-size: 14px;
+  }
+
+  .inputField {
+    height: 48px;
+    padding: 0 16px;
+  }
+
+  .submitButton {
+    height: 54px;
+  }
+}

@@ -1,3 +1,4 @@
+import React from 'react';
 import Layout from '../../../Layout/Layout';
 import HeaderLogo from './assets/headerLogo.svg';
 import styles from './styles.module.css';
@@ -35,14 +36,26 @@ const navbarItemInfo = [
 ];
 
 function Header() {
+  const handleScroll = (e, href) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Layout>
       <div className={styles.Header}>
-        <img src={HeaderLogo} />
+        <img src={HeaderLogo} className={'hide-on-mobile'} />
         <ul className={classNames(styles.navbarLinks, 'hide-on-mobile')}>
           {navbarItemInfo.map((item) => (
             <li className={styles.navbarItem} key={item.text}>
-              <a href={item.href} className={styles.navbarLink}>
+              <a
+                href={item.href}
+                className={styles.navbarLink}
+                onClick={(e) => handleScroll(e, item.href)}
+              >
                 {item.text}
               </a>
             </li>

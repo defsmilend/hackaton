@@ -1,5 +1,5 @@
 import Layout from '../Layout/Layout';
-import Sponsors from './components/Sponsors/Sponsors';
+// import Sponsors from './components/Sponsors/Sponsors';
 import styles from './styles.module.css';
 
 const aboutDescription =
@@ -7,14 +7,14 @@ const aboutDescription =
 
 function AboutSpeakers() {
   return (
-    <div className={styles.AboutSpeakers}>
+    <div id="about" className={styles.AboutSpeakers}>
       <Layout>
         <div className={styles.AboutSpeakers__wrapper}>
           <div className={styles.aboutBlock}>
             <h1 className="wubba-text-style">about</h1>
             <p>{aboutDescription}</p>
           </div>
-          <Sponsors />
+          {/* <Sponsors /> */}
         </div>
       </Layout>
     </div>

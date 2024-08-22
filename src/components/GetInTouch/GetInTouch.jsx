@@ -8,20 +8,23 @@ const buttonInfo = [
   {
     logo: LocationLogo,
     buttonText: 'Location',
+    link: 'https://www.google.com/maps?q=3101+Park+Blvd,+Palo+Alto,+CA+94306,+USA',
   },
   {
     logo: LocationLogo,
     buttonText: 'Phone',
+    link: 'tel:+16506654710',
   },
   {
     logo: EmailLogo,
     buttonText: 'Email',
+    link: 'mailto:info@thehacknerd.com',
   },
 ];
 
 export default function GetInTouch() {
   return (
-    <div className={styles.wrapper}>
+    <div id="contact" className={styles.wrapper}>
       <div className={styles.content}>
         <h1 className={classNames(styles.title, 'wubba-text-style')}>
           Get in Touch
@@ -29,10 +32,14 @@ export default function GetInTouch() {
         <div className={styles.buttonSection}>
           {buttonInfo.map((el) => {
             return (
-              <button className={styles.submitButton} key={el.buttonText}>
+              <a
+                href={el.link}
+                key={el.buttonText}
+                className={styles.submitButton}
+              >
                 <img src={el.logo} alt="logo" />
                 <span className={styles.buttonText}>{el.buttonText}</span>
-              </button>
+              </a>
             );
           })}
         </div>
