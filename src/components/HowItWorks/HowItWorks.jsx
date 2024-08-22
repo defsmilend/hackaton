@@ -2,6 +2,7 @@ import Layout from '../Layout/Layout';
 import classNames from 'classnames';
 import styles from './styles.module.css';
 import stepLogo from './assets/stepLogo.svg';
+import Banner from './assets/Banner.png';
 
 const workSteps = [
   {
@@ -32,7 +33,7 @@ function HowItWorks() {
           <div className={styles.stepsBlock}>
             <img
               className={classNames(styles.banner, 'hide-on-mobile')}
-              src="src/components/HowItWorks/assets/Banner.png"
+              src={Banner}
               alt="banner"
             />
             <div className={styles.step}>

@@ -2,6 +2,8 @@ import CountdownTimer from './components/CountdownTimer/CountdownTimer';
 import Header from './components/Header/Header';
 import styles from './styles.module.css';
 import classNames from 'classnames';
+import mainBannerImg from './assets/MainBannerImage.png';
+import ApplyButton from './assets/ApplyButton.png';
 
 function MainBanner() {
   const targetDate = new Date('2024-12-31T23:59:59');
@@ -26,16 +28,13 @@ function MainBanner() {
               cursor: 'pointer',
             }}
           >
-            <img
-              src="src/components/MainBanner/components/Header/assets/ApplyButton.png"
-              alt="button"
-            />
+            <img src={ApplyButton} alt="button" />
           </button>
           <CountdownTimer targetDate={targetDate} />
         </div>
         <img
           className={classNames(styles.mainBannerImg, 'hide-on-mobile')}
-          src="src/components/MainBanner/assets/MainBannerImage.png"
+          src={mainBannerImg}
           alt="MainBanner"
         />
       </div>
