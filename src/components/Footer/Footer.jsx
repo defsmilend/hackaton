@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
+import FooterImgMob from './assets/FooterImgMob.png';
 
 const navbarItemInfo = [
   {
@@ -57,6 +58,7 @@ export default function Footer() {
             </li>
           ))}
         </ul>
+        <img className={styles.FooterImgMob} src={FooterImgMob} alt="" />
         <hr className="hide-on-mobile" />
         {/* <div className={styles.subscribe}>
           <form>

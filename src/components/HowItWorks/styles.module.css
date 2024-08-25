@@ -51,6 +51,10 @@
   color: #03aec6;
 }
 
+.stepsBlockMob {
+  display: none;
+}
+
 @media screen and (max-width: 1160px) {
   .stepsBlock .banner {
     display: none;
@@ -65,6 +69,11 @@
 
   .stepsBlock {
     margin-top: 54px;
+    display: none;
+  }
+
+  .stepsBlockMob {
+    display: block;
   }
 
   .stepItem {
@@ -73,13 +82,44 @@
   }
 
   .stepItem img {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     margin-right: 0;
   }
 
   .stepItem span {
     margin-top: 16px;
     font-size: 18px;
+  }
+
+  .stepsBlockMob {
+    margin-top: 42px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .stepMob {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .stepMobFirst {
+    margin-top: 30px;
+  }
+
+  .stepItem span {
+    text-align: center;
+  }
+
+  .bannerMob {
+    width: 100%;
+    max-width: 190px;
+    height: 213px;
+  }
+
+  .stepsBlockMob {
+    display: flex;
   }
 }

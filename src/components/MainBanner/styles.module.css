@@ -42,6 +42,10 @@ img {
   height: 614px;
 }
 
+.mainBannerImgMob {
+  display: none;
+}
+
 /* mobile version */
 
 @media screen and (max-width: 1160px) {
@@ -67,5 +71,12 @@ img {
     font-size: 20px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .mainBannerImgMob {
+    margin: 48px 0;
+    width: 211px;
+    height: 219px;
+    display: block;
   }
 }

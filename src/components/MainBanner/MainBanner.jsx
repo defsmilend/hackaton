@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import styles from './styles.module.css';
 import classNames from 'classnames';
 import mainBannerImg from './assets/MainBannerImage.png';
+import mainBannerImgMob from './assets/MainBannerImageMob.png';
 import ApplyButton from './assets/ApplyButton.png';
 
 function MainBanner() {
@@ -27,9 +28,20 @@ function MainBanner() {
               padding: 0,
               cursor: 'pointer',
             }}
+            onClick={() =>
+              window.open(
+                'https://docs.google.com/forms/d/e/1FAIpQLSf0zdCVYPLfOT08vKwYPPYoKwOyXRzca5EjswMCxKItdsCkww/viewform?pli=1',
+                '_blank'
+              )
+            }
           >
             <img src={ApplyButton} alt="button" />
           </button>
+          <img
+            className={styles.mainBannerImgMob}
+            src={mainBannerImgMob}
+            alt="MainBannerMob"
+          />
           <CountdownTimer targetDate={targetDate} />
         </div>
         <img

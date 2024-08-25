@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 767px) {
   .timer {
-    margin-top: 64px;
+    margin-top: 0;
   }
 
   .circle .label {
