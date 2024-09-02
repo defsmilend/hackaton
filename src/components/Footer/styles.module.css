@@ -156,3 +156,13 @@ form {
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width: 385px) {
+  .FooterImgMob {
+    display: none;
+  }
+  .content {
+    justify-content: center;
+  }
+
+}
